@@ -3,7 +3,7 @@
   display: flex;
   height: 5rem;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: space-between;
   background-color: $color_white;
   color: black;
   position: sticky;
@@ -24,8 +24,8 @@
 
 .logo_letter {
   background-color: $color_grey;
-  padding: 10px;
-  font-size: 30px;
+  width: 2rem;
+  font-size: 25px;
   font-weight: 700;
   margin-left: 0.5rem;
 }
@@ -41,7 +41,7 @@ ul {
   padding: 0;
 }
 ul li img {
-  width: 2.5rem;
+  width: 2rem;
   margin: 1rem 0.8rem 0 0;
 }
 
@@ -65,5 +65,4 @@ ul li img {
   .social_network {
     display: none;
   }
-
 }
