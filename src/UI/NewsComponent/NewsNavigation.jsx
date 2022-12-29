@@ -1,4 +1,3 @@
-import { NewsComponent } from "./NewsComponent";
 import styles from "./News.module.scss";
 import { useState } from "react";
 import { Link } from "react-router-dom";
@@ -19,13 +18,14 @@ export const NewsNavigation = ({ getCategory }) => {
   return (
     <div onClick={(e) => setTarget(e.target)} className={`${styles.news_navigation} col-lg-12`}>
       {Object.values(category).map((item, index) => (
-        <Link
+        <a
+          href={`#${item}`}
           key={index}
           onClick={() => getCategory(item)}
           className={target.innerText === item ? "active" : ""}
         >
           {item}
-        </Link>
+        </a>
       ))}
     </div>
   );

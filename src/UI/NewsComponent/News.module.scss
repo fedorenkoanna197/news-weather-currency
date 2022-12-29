@@ -226,6 +226,7 @@
     }
 
     .description {
+        min-height: 75px;
         margin: 0.5rem 0 0;
         color: $color_black;
         text-align: justify;
@@ -284,6 +285,12 @@
     .search_field {
         &:after {
             right: calc(100% - 350px);
+        }
+    }
+
+    .newsCard_wrap {
+        .description {
+            min-height: 35px;
         }
     }
 }

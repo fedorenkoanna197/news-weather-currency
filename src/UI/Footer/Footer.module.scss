@@ -2,17 +2,18 @@
 
 .footer {
   background-color: $color_grey;
-  margin-top: 30px;  
+  margin-top: 30px;
 
   &__container {
     display: flex;
-    padding-bottom: 10px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 10px 20px;
   }
 
   &__contact {
     display: flex;
     flex-direction: column;
-    width: 470px;
     margin-top: 40px;
   }
 
@@ -42,23 +43,15 @@
     margin: 10px;
     font-weight: bold;
   }
-  
+
   a {
     color: $color_white;
-  }
-}
-@media (max-width: 1050px) {
-  .footer {
-    &__contact {
-      width: 270px;
-    }
   }
 }
 
 @media (max-width: 864px) {
   .footer {
     &__location {
-        
       iframe {
         width: 360px;
       }
@@ -87,12 +80,12 @@
       }
 
       iframe {
-        width: 330px;
+        width: 310px;
       }
     }
 
     &__bottom {
-      p{
+      p {
         font-size: 13px;
       }
     }
