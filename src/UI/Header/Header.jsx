@@ -16,7 +16,7 @@ export const Header = () => {
 
   return (
     <header className={styles.header}>
-      <div className={styles.logo_portal}>
+      <div className={`${styles.logo_portal}`}>
         <ul className={styles.logo}>
           <li className={styles.logo_letter}>A</li>
           <li className={styles.logo_letter}>B</li>
