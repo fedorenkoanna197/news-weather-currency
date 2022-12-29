@@ -18,8 +18,6 @@ export const NewsList = () => {
   const { data = [], isLoading, isError, isSuccess, error } = useGetAllPostsQuery(news);
 
   // Pagination
-  const [loading, setLoading] = useState(true);
-  const [setError] = useState(false);
 
   const {
     firstContentIndex,
