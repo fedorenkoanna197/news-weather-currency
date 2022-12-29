@@ -11,7 +11,7 @@ export const SearchNews = ({ getSearchNews }) => {
         name="search"
         value={value}
         onChange={(e) => setValue(e.target.value)}
-        onBlur={(e) => {
+        onKeyUp={(e) => {
           getSearchNews(e.target.value);
           setValue("");
         }}
