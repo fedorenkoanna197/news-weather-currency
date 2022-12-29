@@ -17,18 +17,19 @@ export const NewsComponent = ({ post, className }) => {
         <h3>{title}</h3>
         <p className={styles.description}>{description}</p>
         <div className={styles.userInfo_wrapper}>
-          <div className={`${styles.userName_info} col-6 col-md-6 col-lg-6`}>
+          <div className={`${styles.userName_info}`}>
             <img src={UserAvatar} alt={title} />
             <p>{author || "no author"}</p>
           </div>
-          <div className={`${styles.sourceNews_info} col-6 col-md-6 col-lg-6 pl-2`}>
+          <div className={`${styles.sourceNews_info}`}>
             <img src={SourseNews} alt={title} />
             <a href={url}>{source.name.toLowerCase()}</a>
           </div>
-        </div>
-        <div className={styles.userDate_info}>
-          <img src={Calendar} alt={title} />
-          <p>{formatDate}</p>
+
+          <div className={styles.userDate_info}>
+            <img src={Calendar} alt={title} />
+            <p>{formatDate}</p>
+          </div>
         </div>
       </div>
     </article>
