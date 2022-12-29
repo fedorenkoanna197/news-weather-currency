@@ -36,6 +36,11 @@ export const GeneralLayout = () => {
 
               {search === "" && (
                 <>
+                  <a name={category}></a>
+                  <br />
+                  <br />
+                  <br />
+                  <br />
                   <h2>{category}</h2>
                   <NewsList />
                 </>

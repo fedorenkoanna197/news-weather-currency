@@ -15,7 +15,7 @@ export const NewsComponent = ({ post, className }) => {
       </div>
       <div className={styles.newsCard_body}>
         <h3>{title}</h3>
-        <p className={styles.description}>{description}</p>
+        <p className={styles.description}>{description || "no description"}</p>
         <div className={styles.userInfo_wrapper}>
           <div className={`${styles.userName_info}`}>
             <img src={UserAvatar} alt={title} />
